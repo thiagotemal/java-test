@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "dcacace1-e62b-4d34-9e05-9d9d3a78a5bc",
+		"name": "JDBCcLIENT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6564866"
+	},
+	"item": [
+		{
+			"name": "V1 GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Insomnia/2023.5.7"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/v1/direct-debit-entrys",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"direct-debit-entrys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post V1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Insomnia/2023.5.7"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n\n\t\"ammout\":10,\n\t\"expireDate\":\"2023-14-12\",\n\t\"status\":\"AGENDADO\"\n}\n\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/direct-debit-entrys",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"direct-debit-entrys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "V1 GET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Insomnia/2023.5.7"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/v1/direct-debit-entrys/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"direct-debit-entrys",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "V2 PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Insomnia/2023.5.7"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\r\n\t\"ammout\":10,\r\n\t\"expireDate\":\"2023-14-12\",\r\n\t\"status\":\"LIQUIDADO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v2/direct-debit-entrys/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v2",
+						"direct-debit-entrys",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "V1 DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Insomnia/2023.5.7"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/v1/direct-debit-entrys/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"direct-debit-entrys",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "V2 GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Insomnia/2023.5.7"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/v2/direct-debit-entrys",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v2",
+						"direct-debit-entrys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post V2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Insomnia/2023.5.7"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n\n\t\"ammout\":10,\n\t\"expireDate\":\"2023-14-12\",\n\t\"status\":\"AGENDADO\"\n}\n\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/v2/direct-debit-entrys",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v2",
+						"direct-debit-entrys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "V2 GET BY ID Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Insomnia/2023.5.7"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/v2/direct-debit-entrys/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v2",
+						"direct-debit-entrys",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "V2 DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Insomnia/2023.5.7"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/v2/direct-debit-entrys/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v2",
+						"direct-debit-entrys",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
